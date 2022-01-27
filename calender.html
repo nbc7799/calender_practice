@@ -5,30 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="calender.css" />
   </head>
   <body>
     <div class="calender">
       <div class="header">
         <div class="year-month"></div>
         <div class="nav">
-          <button class="nav-btn go-prev">&lt;</button>
-          <button class="nav-btn go-today">Today</button>
-          <button class="nav-btn go-next">&gt;</button>
+          <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+          <button class="nav-btn go-today" onclick="goToday()">Today</button>
+          <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
         </div>
       </div>
       <div class="main">
         <div class="days">
+          <div class="day">일</div>
           <div class="day">월</div>
           <div class="day">화</div>
           <div class="day">수</div>
           <div class="day">목</div>
           <div class="day">금</div>
           <div class="day">토</div>
-          <div class="day">일</div>
         </div>
         <div class="dates"></div>
       </div>
     </div>
-    <script src="calender.js"></script>
+    <script src="calender2.js"></script>
   </body>
 </html>
